@@ -14,7 +14,7 @@ interface UserData {
 
 
 export default function Home() {
-  const [userData, setUserData] = useState< userData | null>(null)
+  const [userData, setUserData] = useState< UserData | null>(null)
 
   useEffect(()=>{
     if (WebApp.initDataUnsafe.user){
